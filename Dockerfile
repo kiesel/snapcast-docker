@@ -14,4 +14,4 @@ RUN apk --update --no-cache add snapcast-server=${SNAPCAST_VERSION}-r0
 
 COPY --from=snapweb /snapweb /usr/share/snapserver/snapweb
 
-CMD ["/usr/bin/snapserver"]
+ENTRYPOINT ["/usr/bin/snapserver"]
